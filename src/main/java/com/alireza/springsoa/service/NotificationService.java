@@ -1,17 +1,7 @@
 package com.alireza.springsoa.service;
 
-import javax.ws.rs.GET;
+public interface NotificationService {
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+	String getLastNotification();
 
-@RestController
-public class NotificationService {
-	
-	@GET
-	@RequestMapping("/notifications")
-	public String getLastNotification() {
-		return "lastNotification";
-	}
-	
 }
